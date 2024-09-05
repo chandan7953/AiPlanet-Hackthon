@@ -18,13 +18,17 @@
   padding: 0.8rem 5rem 0.8rem 5rem;
 }
 
+.challenge-header {
+  padding-bottom: 1rem;
+}
+
 .input-container {
   margin-bottom: 20px;
 }
 
 .input-label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .input-field {
@@ -57,6 +61,31 @@
   cursor: pointer;
 }
 
+.customFileContainer {
+  border-radius: 5px;
+  width: 20%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #ccc; */
+  gap: 8px;
+}
+.customFileHiddenInput {
+  display: none;
+  color: #d9d9d9;
+}
+.filecustomButton {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.choose-image {
+  height: 20vh;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 767px) {
   .navbar,
   .container-challengeForm {
@@ -66,7 +95,8 @@
   .input-field,
   .textarea-field,
   .selection-field,
-  .challenge-submit-btn {
+  .challenge-submit-btn,
+  .customFileContainer {
     width: 100%;
   }
 }
@@ -79,7 +109,8 @@
     width: 75%;
   }
   .selection-field,
-  .challenge-submit-btn {
+  .challenge-submit-btn,
+  .customFileContainer {
     width: 30%;
   }
 }

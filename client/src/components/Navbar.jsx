@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/icons/logo.svg"; // Make sure the extension is correct
+import logo from "../assets/icons/logo.svg";
 
 const Navbar = () => {
   return (

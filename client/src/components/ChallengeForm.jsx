@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import InputField from "./InputField";
-import uploadIcon from "../assets/icons/upload.svg";
+import CustomFileInput from "./CustomFileInput";
 
 const BASE_URL = import.meta.env.VITE_API_URL;
 
@@ -92,7 +92,7 @@ const ChallengeForm = ({ isEditing }) => {
 
   return (
     <div className="container-challengeForm">
-      <h2>{isEditing ? "Edit Challenge" : "Create Challenge"}</h2>
+      <h2 className="challenge-header">Challenge Details</h2>
       {error && <div style={{ color: "red" }}>{error}</div>}
       <form onSubmit={handleSubmit}>
         {/* Form Fields */}
@@ -142,26 +142,9 @@ const ChallengeForm = ({ isEditing }) => {
             Image
           </label>
 
-          {imagePreview && (
-            <img
-              src={imagePreview}
-              alt="Preview"
-              style={{ marginTop: "10px", maxWidth: "100%", height: "auto" }}
-            />
-          )}
-          <input
-            type="file"
-            id="image"
-            name="image"
+          <CustomFileInput
             onChange={handleFileChange}
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-          />
-          <input
-            type="file"
-            id="image"
-            name="image"
-            onChange={handleFileChange}
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
+            imagePreview={imagePreview}
           />
         </div>
 
@@ -183,7 +166,7 @@ const ChallengeForm = ({ isEditing }) => {
           </select>
         </div>
         <button type="submit" className="challenge-submit-btn">
-          {isEditing ? "Update Challenge" : "Create Challenge"}
+          {isEditing ? "Save Challenge" : "Create Challenge"}
         </button>
       </form>
     </div>
