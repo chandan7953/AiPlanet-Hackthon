@@ -1,4 +1,85 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0.8rem 5rem 0.8rem 5rem;
+}
+.navbar > img {
+  width: 100px;
+  height: 40px;
+}
+
+/* create */
+.container-challengeForm {
+  padding: 0.8rem 5rem 0.8rem 5rem;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 25%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.textarea-field {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.selection-field {
+  width: 20%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.challenge-submit-btn {
+  width: 20%;
+  padding: 10px 20px;
+  background-color: #44924c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar,
+  .container-challengeForm {
+    padding: 1rem;
+  }
+
+  .input-field,
+  .textarea-field,
+  .selection-field,
+  .challenge-submit-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 998px) {
+  .input-field {
+    width: 50%;
+  }
+  .textarea-field {
+    width: 75%;
+  }
+  .selection-field,
+  .challenge-submit-btn {
+    width: 30%;
+  }
 }
