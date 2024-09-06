@@ -1,8 +1,7 @@
 import React from "react";
-import uploadIcon from "../assets/icons/upload.svg";
 import clockIcon from "../assets/icons/clockicon.svg";
 import skillLevel from "../assets/icons/skill-level-basic.svg";
-import "./DetailPage.css"; // Import styles for the page
+import "./DetailPage.css";
 
 const DetailPage = () => {
   return (

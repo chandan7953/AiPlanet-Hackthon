@@ -1,0 +1,94 @@
+.challenge-section {
+  background-color: #003145;
+  color: #fff;
+  text-align: center;
+}
+
+.challenge-banner {
+  display: flex;
+  padding: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-section {
+  max-width: 60%;
+  text-align: left;
+}
+
+.text-section h1 {
+  border-left: 6px solid #ffce5c;
+  padding-left: 4rem;
+  font-size: 2.5rem;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-left: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.create-challenge-btn {
+  margin-left: 4rem;
+  background-color: #fff;
+  color: #04263a;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.image-section img {
+  width: 250px;
+  height: auto;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #002a3b;
+  padding: 2rem;
+  border-radius: 10px;
+  gap: 2px;
+}
+
+.stact-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-box {
+  text-align: start;
+  padding: 1rem;
+}
+
+.stat-box p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.stat-box span {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+@media screen and (max-width: 767px) {
+  .text-section {
+    max-width: 100%;
+  }
+  .image-section {
+    display: none;
+  }
+}
