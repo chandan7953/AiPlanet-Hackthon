@@ -5,7 +5,7 @@ import aiIcon from "../assets/icons/aiIcon.svg";
 import datascience from "../assets/icons/datascience.svg";
 import aiHosted from "../assets/icons/aiHosted.svg";
 
-const ChallengeList = () => {
+const ChallengeSectionA = () => {
   return (
     <div>
       <div className="challenge-section">
@@ -59,4 +59,4 @@ const ChallengeList = () => {
   );
 };
 
-export default ChallengeList;
+export default ChallengeSectionA;
